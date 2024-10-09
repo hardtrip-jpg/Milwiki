@@ -41,6 +41,7 @@ iframe {
   line-height: 28px;
   max-width: 25%;
   min-height: 30px;
+  min-width: none;
   text-decoration: none;
   transition: all .1s;
   user-select: none;
