@@ -2,11 +2,13 @@
 
 function createButton() {
     const button = document.createElement("button");
-    button.innerText = "Test";
+    const which_article = Math.floor(Math.random() * 2) + 1;
+
+    button.innerText = "test " + which_article.toString();
     button.classList.add("button-46");
 
     button.addEventListener("click", () => {
-        buttonClicked(Math.floor(Math.random() * 2) + 1);
+        buttonClicked(which_article);
     })
 
     const button_holder = document.getElementById("button-holder");
@@ -18,7 +20,7 @@ function buttonClicked(articleID) {
 
     const random_gothru = (Math.floor(Math.random() * 2) + 1);
     for (let i = 0; i <= random_gothru; i++) {
-        createButton();
+        createButton(articleID);
     };
     console.log(articleID);
     document.getElementById('article-holder').src = matchArticle(articleID);
