@@ -2,6 +2,7 @@ body {
     background-color: antiquewhite;
     width: 100%;
     height: 100%;
+    justify-content: center;
 }
 
 .title{
@@ -30,4 +31,9 @@ body {
 .main-information{
     width: 900px;
     margin-left: 40px;
+}
+
+.random-iframe{
+    width: 150%;
+    height: 150%;
 }

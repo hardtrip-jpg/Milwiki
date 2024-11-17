@@ -32,9 +32,9 @@ function buttonClicked(articleID) {
 function matchArticle(articleID) {
     switch (articleID) {
         case 1:
-            return "./html-files/test-article-1.html"
+            return "./html-files/main-article.html"
         case 2:
-            return "./html-files/test-article-2.html"
+            return "./html-files/wisconsin-center.html"
         default:
             return "./html-files/test-article-1.html"
     }

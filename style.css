@@ -1,4 +1,6 @@
 .main_background {
+  display: flex;
+  justify-content: center;
   background-color: steelblue;
   max-width: 1000px;
   max-height: 1000px;
@@ -6,12 +8,19 @@
   color: #000000;
 }
 
+.side-article{
+  max-width: 300px;
+}
+.side-iframe{
+  height:1070px;
+}
+
 .header-image {
   padding-top: 1%;
   height: 200px;
 }
 
-iframe {
+.main-iframe {
   width: 995px;
   height: 800px;
 }
