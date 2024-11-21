@@ -2,10 +2,29 @@
 <html>
 
 <head>
+    <script src="../script.js"></script>
     <link rel="stylesheet" href="article-style.css">
 </head>
 
-<body>
+<script>
+
+    function addInterior(){
+        const random_1 = (Math.floor(Math.random() * 10));
+
+        if (random_1 < 5){
+            let totalArticles = 6;
+            let randomIndex = Math.floor(Math.random() * totalArticles) + 1;
+            let randomFile = `article-${randomIndex}.html`;
+
+            console.log(randomFile);
+            document.getElementById("ran-0").src = randomFile;
+        }
+        
+    }
+   
+</script>
+
+<body onload="addInterior()">
     <div class="title">
         <b><i> <h1>Wisconsin Center</h1></i></b>
     </div>
@@ -13,16 +32,16 @@
         <div class="short-info">
             <p>The <strong>Wisconsin Center</strong> is a convention center located in downtown Milwaukee, Wisconsin. It serves as one of the city's main venues for conferences, trade shows, exhibitions, and large-scale events. Opened in 1998, the Wisconsin Center plays a significant role in the city's tourism and business sectors by hosting a wide variety of events that attract visitors from across the region and beyond.</p>
             <div>
-                <iframe src="" frameborder="0" class="random-iframe"></iframe>
+                <iframe src="" frameborder="0" class="random-iframe" id="ran-0"></iframe>
             </div>
         </div>
         <div>
             <div class="example-image">
-                <img src="./assets/3a551c1ae39107b5ee660bef6eb6648a-2237380273.jpg" alt="">
+                <img src="./assets/center.jpg" alt="">
 
             </div>
             <div class="descriptive-text">
-                text
+                
             </div>
         </div>
     </div>
